@@ -6,13 +6,13 @@
   }
   
   .nav-tabs > li.open, .member-tabset > .nav-tabs > li:hover {
-    /* border-bottom: 4px solid #fbcdcf; */
+    border-bottom: 4px solid #fbcdcf;
   }
   
   .member-tabset > .nav-tabs > li.open > a, .member-tabset > .nav-tabs > li:hover > a {
     border: 0;
     background: none !important;
-    /* color: #333333; */
+    color: #333333;
   }
   
   .member-tabset > .nav-tabs > li.open > a > i, .member-tabset > .nav-tabs > li:hover > a > i {
@@ -24,7 +24,7 @@
   }
   
   .member-tabset > .nav-tabs > li.active {
-    /* border-bottom: 4px solid #E95420; */
+    border-bottom: 4px solid #f27142;
     position: relative;
   }
   
