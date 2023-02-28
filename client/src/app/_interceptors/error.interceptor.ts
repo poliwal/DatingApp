@@ -29,6 +29,9 @@ export class ErrorInterceptor implements HttpInterceptor {
                   }
                 }
                 throw modelStateErrors.flat();
+              } else if (error.error) {
+                const passwordErrors = error.error.reduce((arr:string[], elem:any) => arr.concat(elem?.description), []);
+                throw passwordErrors.flat();
               } else {
                 this.toastr.error(error.error, error.status.toString());
               }
